@@ -14,6 +14,7 @@ This project looks at Robinhood's marketing channel and campaign performance for
 ## Tools
 * PostgreSQL
 * pgAdmin 4
+* Matplotlib
 
 ## Datasets
 ### ad_spend.csv                                                                    
@@ -49,18 +50,32 @@ Unpaid:
 1. Organic
 2. Referral
 
+## Analysis
+### 1. Data Cleaning and Validation
+Fixed these issues in the data:
+- Null values
+- Duplicate records
+- Channel naming inconsistencies
 
-## Campaign Performance Metrics
-CTR
-CPC
-ROAS
-Cost Per Signup
-Cost Per Subscriber
+### 2. Metrics
+a. Cost per signup
+b. Cost per paying subscriber
+c. Clicks
 
-*Customers are all users of the app, subscribed or not.
+Customers are all app users, subscribed or not. Signups are people with accounts, and subscribers are customers with paid accounts.
+
+### 3. Campaign Performance Metrics
 
 
 
+## Key Findings
+- The highest performing channels are Paid Search and Paid Social.
+- While the Paid Social channel is profitable, the prospecting video campaigns are underperforming
+- Display channel consumes the most spend and cost, while bringing in the least revenue.
+
+## Recommendation
+- Cut Display completely or refocus its budget.
+- Reduce spend on prospecting videos due to their low conversion rate. [Risk: Could negatively impact profit.]
 
 ## Dataset
 The datasets are provided by Data Career School for educational purposes.
