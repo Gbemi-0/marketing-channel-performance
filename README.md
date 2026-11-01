@@ -52,30 +52,34 @@ Unpaid:
 
 ## Analysis
 ### 1. Data Cleaning and Validation
-Fixed these issues in the data:
-- Null values
-- Duplicate records
-- Channel naming inconsistencies
+
+- Removed 7 duplicate records
+- Standardized channel names across both datasets
+- Confirmed expected blank campaigns in unpaid channels and null subscription fields for signups
 
 ### 2. Metrics
-a. Cost per signup
-b. Cost per paying subscriber
-c. Clicks
+- Cost per signup
+- Cost per subscriber
+- Customer conversion rate
+- Return on ad spend (ROAS)
 
-Customers are all app users, subscribed or not. Signups are people with accounts, and subscribers are customers with paid accounts.
+Signups are people who created accounts, and subscribers are customers with paid accounts (they have a subscription start date).
 
 ### 3. Campaign Performance Metrics
 
 
 
 ## Key Findings
-- The highest performing channels are Paid Search and Paid Social.
-- While the Paid Social channel is profitable, the prospecting video campaigns are underperforming
-- Display channel consumes the most spend and cost, while bringing in the least revenue.
+- Paid Search had the best ROAS and the lowest cost per subscriber among all channels. 
+- While the Paid Social channel drove the most signups overall, the prospecting video campaigns have the lowest customer conversion rates.
+- Display returned the least revenue relative to what it cost.
 
 ## Recommendation
 - Cut Display completely or refocus its budget.
 - Reduce spend on prospecting videos due to their low conversion rate. [Risk: Could negatively impact profit.]
+
+## Data Flow Pipeline
+
 
 ## Dataset
 The datasets are provided by Data Career School for educational purposes.
