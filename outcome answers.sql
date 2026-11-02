@@ -14,17 +14,17 @@ ORDER BY signups DESC;
 -- 2.2
 SELECT channel, campaign,
        COUNT(*) AS signups,
-       COUNT(*) FILTER (WHERE subscribing) AS paying_customers
+       COUNT(*) FILTER (WHERE subscribing) AS subscribers
 FROM signups_clean
 WHERE campaign IS NOT NULL
 GROUP BY channel, campaign
-ORDER BY paying_customers DESC;
+ORDER BY subscribers DESC;
 
 -- Total subscribers from campaign
-SELECT COUNT(*) FILTER (WHERE subscribing) AS paid_campaign_customers
+SELECT COUNT(*) FILTER (WHERE subscribing) AS subscribers
 FROM signups_clean
 WHERE campaign IS NOT NULL
-ORDER BY paid_campaign_customers DESC;
+ORDER BY subscribers DESC;
 
 --3. Lowest cost per signup
 WITH spend AS (
@@ -53,15 +53,15 @@ WITH spend AS (
 outcomes AS (
     SELECT channel, campaign,
            COUNT(*) AS signups,
-           COUNT(*) FILTER (WHERE subscribing) AS paying_customers
+           COUNT(*) FILTER (WHERE subscribing) AS subscribers
     FROM signups_clean
     WHERE campaign IS NOT NULL
     GROUP BY channel, campaign
 )
 SELECT s.channel, s.campaign,
        ROUND(s.total_spend / NULLIF(o.signups, 0), 2) AS cost_per_signup,
-       ROUND(100.0 * o.paying_customers / NULLIF(o.signups, 0), 2) AS customer_conversion_rate,
-       ROUND(s.total_spend / NULLIF(o.paying_customers, 0), 2) AS cost_per_customer
+       ROUND(100.0 * o.subscribers / NULLIF(o.signups, 0), 2) AS customer_conversion_rate,
+       ROUND(s.total_spend / NULLIF(o.subscribers, 0), 2) AS cost_per_customer
 FROM spend s
 JOIN outcomes o USING (channel, campaign)
 ORDER BY cost_per_signup;
