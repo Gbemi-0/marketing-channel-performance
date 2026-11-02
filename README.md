@@ -1,7 +1,9 @@
 # Robinhood Marketing Channel Performance
 
 ## Project Description
-This project looks at Robinhood's marketing channel and campaign performance for the first half of 2025.
+This project is a practice case study looking at Robinhood's marketing channel and campaign performance for the first half of 2025.
+
+[Summary of findings]: Paid Search channel is the cheapest avenue for attracting paying customers; Display channel and Prospecting Video should be cut back.
 
 ## Objective
 * Which channels generate the most revenue?
@@ -70,13 +72,13 @@ Signups are people who created accounts, and subscribers are customers with paid
 
 
 ## Key Findings
-- Paid Search had the best ROAS and the lowest cost per subscriber among all channels. 
-- While the Paid Social channel drove the most signups overall, the prospecting video campaigns have the lowest customer conversion rates.
-- Display returned the least revenue relative to what it cost.
+- Paid Search had the best ROAS (about 0.79) and the lowest cost per subscriber among all channels ($51). 
+- While the Paid Social channel drove the most signups overall, the prospecting video campaigns have the lowest customer conversion rates (about 3% compared to retargeting campaigns).
+- Display returned the least revenue relative to what it cost (about $540 on $16.5K of spend). It also ended campaigns earlier than other channels (134 days compared to 181 days).
 
 ## Recommendation
-- Cut Display completely or refocus its budget.
-- Reduce spend on prospecting videos due to their low conversion rate. [Risk: Could negatively impact profit.]
+- Discontinue Display Network campaigns completely or refocus its budget.
+- Reduce spend on prospecting videos due to their low conversion rate and high cost per subscriber. [Risk: Could negatively impact profit by reducing overall impressions.]
 
 ## Data Flow Pipeline
 
