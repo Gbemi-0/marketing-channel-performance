@@ -1,9 +1,9 @@
 # Robinhood Marketing Channel Performance
 
 ## Project Description
-This project is a practice case study looking at Robinhood's marketing channel and campaign performance for the first half of 2025.
+This project is a practice case study looking at Robinhood's marketing channel and campaign performance for the first half of 2025. The goal is to evaluate marketing and advertising efficiency, compare advertising channels, identify performance trends, and recommend an improved budget allocation framework for the rest of 2025.
 
-**[Summary of findings:]**
+**[Quick Summary of Findings:]**
 Paid Search channel is the cheapest avenue for attracting paying customers; Display Network and Prospecting Video should be cut back.
 
 ## Focus Objectives
@@ -60,6 +60,8 @@ Unpaid:
 - Return on ad spend (ROAS)
 - Click-through rate
 - Cost per click
+
+An Excel sheet is included in the files as a **final deliverable** containing the campaign metrics calculations.
 
 ### 3. Performance Trends
 - Monthly spend 
