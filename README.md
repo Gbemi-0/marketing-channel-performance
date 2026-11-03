@@ -3,7 +3,7 @@
 ## Project Description
 This project is a practice case study looking at Robinhood's marketing channel and campaign performance for the first half of 2025. The goal is to evaluate marketing and advertising efficiency, compare advertising channels, identify performance trends, and recommend an improved budget allocation framework for the rest of 2025.
 
-**[Quick Summary of Findings:]**
+**[Quick Summary of Findings]:**
 Paid Search channel is the cheapest avenue for attracting paying customers; Display Network and Prospecting Video should be cut back.
 
 ## Focus Objectives
